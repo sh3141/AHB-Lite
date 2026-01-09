@@ -1,0 +1,5 @@
+vlib work 
+vlog ../AHB_master.v ../mem.v ../AHB_master_tb.v
+vsim -voptargs=+acc work.AHB_master_tb
+add wave *
+run -all 
